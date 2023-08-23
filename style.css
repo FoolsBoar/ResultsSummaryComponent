@@ -1,3 +1,16 @@
+body {
+    font-family: 'Hanken Grotesk';
+}
+
+h6 {
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
 #resultsZone {
     display: flex;
     position: absolute;
@@ -9,15 +22,16 @@
     justify-content: center;
     align-self: center;
     background: rgb(175, 0, 175);
-    background: linear-gradient(180deg, rgba(175, 0, 175, 1) 35%, rgba(128, 0, 128, 1) 100%);
-    height: 20em;
-    width: 30%;
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    height: 22em;
+    width: 17em;
     padding: 10px;
+    border-radius: 1em;
+    left: 500px;
 }
 
 #yourResult {
-    
-    background: red;
+    position: absolute;
     display: flex;
     min-width: max-content;
     justify-content: center;
@@ -30,7 +44,7 @@
     justify-self: center;
     height: 10em;
     width: 10em;
-    background-color: orange;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     margin-top: 5em;
     border-radius: 50%;
     display: inline-block;
@@ -38,21 +52,67 @@
 
 #resultNumbers1 {
     display: flex;
-    position: absolute;
-    background-color: blue;
+    position: relative;
     color: whitesmoke;
-    margin-top: 2em;
+    margin-top: 1em;
     justify-content: center;
     align-self: flex-start;
-    
+    width: min-content;
+    font-weight: 800;
+    font-size: 2em;
+    transform: translate(2em);
+
 }
 
 #resultNumbers2 {
     display: flex;
-    position: absolute;
-    background-color: blue;
-    color: whitesmoke;
+    position: relative;
+    color: hsl(0, 0%, 100%);
     margin-top: 3em;
     justify-content: center;
+    text-align: center;
     align-self: flex-start;
+    width: max-content;
+    bottom: 3em;
+    font-size: 1em;
+    transform: translate(3.625em);
+    opacity: 0.5;
+}
+
+#greatMessage {
+    display: flex;
+    position: absolute;
+    color: hsl(0, 0%, 100%);
+    margin-top: 1em;
+    justify-content: center;
+    width: min-content;
+    font-weight: 800;
+    font-size: 1.5em;
+    transform: translateX(-50%);
+    top: 62.5%;
+}
+
+#whatScoreMsg {
+    display: flex;
+    position: absolute;
+    height: min-content;
+    text-align: center;
+    align-self: flex-end;
+    padding-bottom: 1.5em;
+    margin: 0 1em;
+    width: auto;
+    color: hsl(0, 0%, 100%);
+}
+
+#Summary {
+    display: flex;
+    position: absolute;
+    background-color: red;
+    width: 30%;
+    height: 40%;
+    /*
+    top: 20%;
+    left: 40%;
+    */
+    align-self: center;
 }
