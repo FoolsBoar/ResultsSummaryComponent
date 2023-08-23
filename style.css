@@ -1,0 +1,58 @@
+#resultsZone {
+    display: flex;
+    position: absolute;
+    /* Esto es lo que centra el div */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Esto es lo que centra el div */
+    justify-content: center;
+    align-self: center;
+    background: rgb(175, 0, 175);
+    background: linear-gradient(180deg, rgba(175, 0, 175, 1) 35%, rgba(128, 0, 128, 1) 100%);
+    height: 20em;
+    width: 30%;
+    padding: 10px;
+}
+
+#yourResult {
+    
+    background: red;
+    display: flex;
+    min-width: max-content;
+    justify-content: center;
+    align-self: flex-start;
+    color: whitesmoke;
+}
+
+#resultsCircle {
+    position: absolute;
+    justify-self: center;
+    height: 10em;
+    width: 10em;
+    background-color: orange;
+    margin-top: 5em;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#resultNumbers1 {
+    display: flex;
+    position: absolute;
+    background-color: blue;
+    color: whitesmoke;
+    margin-top: 2em;
+    justify-content: center;
+    align-self: flex-start;
+    
+}
+
+#resultNumbers2 {
+    display: flex;
+    position: absolute;
+    background-color: blue;
+    color: whitesmoke;
+    margin-top: 3em;
+    justify-content: center;
+    align-self: flex-start;
+}
