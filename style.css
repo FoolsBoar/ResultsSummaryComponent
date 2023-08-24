@@ -28,6 +28,7 @@ h6 {
     padding: 10px;
     border-radius: 1em;
     left: 500px;
+    /* Cambiar px por algo que escale */
 }
 
 #yourResult {
@@ -51,22 +52,23 @@ h6 {
 }
 
 #resultNumbers1 {
+    
     display: flex;
-    position: relative;
+    position: absolute;
     color: whitesmoke;
     margin-top: 1em;
     justify-content: center;
     align-self: flex-start;
-    width: min-content;
+    width: 2em;
     font-weight: 800;
-    font-size: 2em;
-    transform: translate(2em);
-
+    font-size: 3em;
+    transform: translate(0.75em, -0.5em);
+    
 }
 
 #resultNumbers2 {
     display: flex;
-    position: relative;
+    position: absolute;
     color: hsl(0, 0%, 100%);
     margin-top: 3em;
     justify-content: center;
@@ -107,12 +109,18 @@ h6 {
 #Summary {
     display: flex;
     position: absolute;
-    background-color: red;
     width: 30%;
     height: 40%;
-    /*
-    top: 20%;
-    left: 40%;
-    */
-    align-self: center;
+    /* Esto es lo que centra el div */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Esto es lo que centra el div */
+    
+    background-color: red;
+    height: 22em;
+    width: 17em;
+    padding: 10px;
+    border-radius: 1em;
+    
 }
