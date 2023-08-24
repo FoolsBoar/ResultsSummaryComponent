@@ -1,5 +1,6 @@
 body {
     font-family: 'Hanken Grotesk';
+    background-color: whitesmoke;
 }
 
 h6 {
@@ -28,7 +29,7 @@ h6 {
     padding: 10px;
     border-radius: 1em;
     left: 500px;
-    /* Cambiar px por algo que escale */
+    z-index: -1;
 }
 
 #yourResult {
@@ -52,23 +53,22 @@ h6 {
 }
 
 #resultNumbers1 {
-    
     display: flex;
-    position: absolute;
+    position: relative;
     color: whitesmoke;
     margin-top: 1em;
     justify-content: center;
     align-self: flex-start;
-    width: 2em;
+    width: min-content;
     font-weight: 800;
-    font-size: 3em;
-    transform: translate(0.75em, -0.5em);
-    
+    font-size: 2em;
+    transform: translate(2em);
+
 }
 
 #resultNumbers2 {
     display: flex;
-    position: absolute;
+    position: relative;
     color: hsl(0, 0%, 100%);
     margin-top: 3em;
     justify-content: center;
@@ -109,18 +109,43 @@ h6 {
 #Summary {
     display: flex;
     position: absolute;
-    width: 30%;
-    height: 40%;
-    /* Esto es lo que centra el div */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* Esto es lo que centra el div */
-    
-    background-color: red;
-    height: 22em;
-    width: 17em;
-    padding: 10px;
-    border-radius: 1em;
-    
+    background-color: white;
+    width: 20em;
+    height: 36%;
+    transform: translate(39em, 19em);
+    z-index: -2;
 }
+
+#summaryText {
+    display: flex;
+    position: absolute;
+    /*
+    height: 10em;
+    width: 100%;
+    */
+    justify-self: flex-end;
+    padding-left: 3em;
+    font-size: 1.5em;
+    align-self: flex-start;
+}
+
+
+#summaryIconReaction {
+    /*
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    height: 1.5em;
+    
+    background-color: rgb(0,0,0,0.7);
+    
+    transform: translate(5.5em, 6.5em);
+    */
+
+    display: flex;
+    position: absolute;
+    background-color: red;
+    width: 80%;
+    justify-self: center;
+}
+
