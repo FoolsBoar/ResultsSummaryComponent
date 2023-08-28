@@ -1,0 +1,1 @@
+Es un div con gridbox uno para lo azul y otro para lo blanco

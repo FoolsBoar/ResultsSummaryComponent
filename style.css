@@ -1,0 +1,64 @@
+@font-face {
+    font-family: HankenGrotesk;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+/* - Weights: 500, 700, 800 */
+
+* {
+    font-family: HankenGrotesk;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30vh;
+    width: 50vh;
+    background-color: hsl(118, 85%, 45%);
+    border-radius: 1rem;
+    justify-items: center;
+}
+
+#grid-left {
+    border-radius: 1rem;
+    width: 100%;
+    padding-left: 1rem;
+    /*
+    background-color: red;
+    */
+    background: linear-gradient(to bottom,hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+}
+
+#grid-left h1 {
+    color: hsl(0, 0%, 100%);
+}
+
+#grid-circle {
+    display: inline-block;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 12vh;
+    height: 12vh;
+    color: white;
+}
+
+
+
+
+
+
+
+
+#grid-right {
+    border-radius: 1rem;
+    width: 100%;
+    padding-left: 1rem;
+    background-color: blue;
+}
+
